@@ -1,10 +1,10 @@
 class Solution:
     def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
     
-        a=0
+        a=[]
         for j in hours:
             if j>=target:
-                a=a+1
+                a.append(j)
 
-        return a    
+        return len(a)   
         
