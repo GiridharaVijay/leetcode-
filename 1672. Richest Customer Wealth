@@ -3,7 +3,6 @@ class Solution:
         a=[]
         for i in accounts:
             for j in i:
-                sum(i)
                 a.append(sum(i))
         return max(a)
         
