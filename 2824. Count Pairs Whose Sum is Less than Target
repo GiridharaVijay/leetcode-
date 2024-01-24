@@ -1,0 +1,10 @@
+class Solution:
+    def countPairs(self, nums: List[int], target: int) -> int:
+        a=[]
+        for i in nums:
+            for j in nums:
+                if (i<j) and (i+j<target):
+                    a.append((i,j))
+        return len(a)
+
+        
